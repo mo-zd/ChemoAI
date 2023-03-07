@@ -24,7 +24,7 @@ Set up your OpenAI API credentials by creating a file named .env in the root dir
 
 To use ChemoAI, run the app.py script from the command line.
 
-    python app.py
+    python chemoai.py
 
 This will start the app and open a web interface that allows users to input a molecule name or SMILES/MOL2 format and retrieve drug properties. The app will call the OpenAI API to generate additional drug-related information based on user input and display this information on the web page.
 
