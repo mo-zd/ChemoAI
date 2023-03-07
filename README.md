@@ -1,6 +1,8 @@
 # ChemoAI
 
-ChemoAI is a virtual drug design assistant that allows users to input a molecule name or SMILES/MOL2 format and retrieve drug properties, such as target disease, molecular weight, pharmacokinetic profile, and toxicity. The app uses the OpenAI API to generate drug properties based on user input and provides a user-friendly interface for accessing this information.
+![ChemoAI](https://user-images.githubusercontent.com/91246296/223374610-9ea70988-b4cf-4c6a-91c7-4a3327a12f39.jpg)
+
+ChemoAI is a virtual drug design assistant that allows users to input a molecule name or SMILES format and retrieve drug properties, such as target disease, molecular weight, pharmacokinetic profile, and toxicity. The app uses the OpenAI API to generate drug properties based on user input and provides a user-friendly interface for accessing this information.
 
 ## Installation
 
@@ -26,7 +28,7 @@ To use ChemoAI, run the app.py script from the command line.
 
     python chemoai.py
 
-This will start the app and open a web interface that allows users to input a molecule name or SMILES/MOL2 format and retrieve drug properties. The app will call the OpenAI API to generate additional drug-related information based on user input and display this information on the web page.
+This will start the app and open a web interface that allows users to input a molecule name or SMILES format and retrieve drug properties. The app will call the OpenAI API to generate additional drug-related information based on user input and display this information on the web page.
 
 ## Contributing
 
