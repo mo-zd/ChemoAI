@@ -3,7 +3,7 @@
 ![logo](https://user-images.githubusercontent.com/91246296/227485787-44eaadd4-3a78-4cc9-b881-e49920537866.jpg)
 
 
-ChemoAI is a virtual drug design assistant that allows users to input a molecule name or SMILES format and retrieve drug properties, such as target disease, molecular weight, pharmacokinetic profile, and toxicity. The app uses the OpenAI API to generate drug properties based on user input and provides a user-friendly interface for accessing this information.
+ChemoAI is a virtual drug design assistant that allows users to input a molecule name or SMILES format and retrieve drug properties, such as #### target disease, #### molecular weight, #### pharmacokinetic profile, and #### toxicity. The app uses the OpenAI API to generate drug properties based on user input and provides a user-friendly interface for accessing this information.
 
 ## Installation
 
