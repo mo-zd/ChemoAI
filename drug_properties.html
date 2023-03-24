@@ -1,12 +1,51 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Drug properties</title>
+    <title>ChemoAI - Drug Properties</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            margin: 0 auto;
+            max-width: 800px;
+            padding: 20px;
+        }
+        h1 {
+            margin-top: 0;
+        }
+        ul {
+            list-style: none;
+            margin: 20px 0;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        strong {
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
-    <h1>Drug properties</h1>
-    <p><strong>Name:</strong> {{ drug_properties['name'] }}</p>
-    <p><strong>Formula:</strong> {{ drug_properties['formula'] }}</p>
-    <p><strong>Molecular weight:</strong> {{ drug_properties['molecular_weight'] }}</p>
+    <div class="container">
+        {% if drug_properties %}
+            <h1>Drug Properties for {{ drug_properties.molecule_name }}</h1>
+            <ul>
+                <li><strong>Target disease:</strong> {{ drug_properties.target_disease }}</li>
+                <li><strong>Molecular weight:</strong> {{ drug_properties.molecular_weight }}</li>
+                <li><strong>Pharmacokinetic profile:</strong> {{ drug_properties.pharmacokinetic_profile }}</li>
+                <li><strong>Toxicity:</strong> {{ drug_properties.toxicity }}</li>
+                <li><strong>Mechanism of action:</strong> {{ drug_properties.mechanism_of_action }}</li>
+                <li><strong>Side effects:</strong> {{ drug_properties.side_effects }}</li>
+                <li><strong>Potential drug interactions:</strong> {{ drug_properties.potential_drug_interactions }}</li>
+            </ul>
+        {% else %}
+            <h1>Error</h1>
+            <p>{{ error_message }}</p>
+        {% endif %}
+    </div>
 </body>
 </html>
