@@ -14,7 +14,7 @@ def get_drug_properties(input_molecule):
         # Call OpenAI API to generate drug properties
         response = openai.Completion.create(
             engine="text-davinci-002",
-            prompt="Get drug properties for " + input_molecule + ".",
+            prompt="Get drug properties for " + input_molecule + ".\n\nProperties:\n- Target disease\n- Molecular weight\n- Pharmacokinetic profile\n- Toxicity\n- Mechanism of action\n- Side effects\n- Potential drug interactions",
             max_tokens=1024,
             n=1,
             stop=None,
@@ -46,4 +46,4 @@ def drug_properties():
         return render_template('drug_properties.html', drug_properties=drug_properties)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True)                   
