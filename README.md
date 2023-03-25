@@ -3,7 +3,10 @@
 ![logo](https://user-images.githubusercontent.com/91246296/227485787-44eaadd4-3a78-4cc9-b881-e49920537866.jpg)
 
 
-ChemoAI is a virtual drug design assistant that allows users to input a molecule name or SMILES format and retrieve drug properties, such as **target disease**, **molecular weight**, **pharmacokinetic profile**, and **toxicity**. The app uses the OpenAI API to generate drug properties based on user input and provides a user-friendly interface for accessing this information.
+ChemoAI is a virtual drug design assistant that allows users to input a molecule name or SMILES format and retrieve drug properties, such as target disease, molecular weight, pharmacokinetic profile, and toxicity. The app uses the OpenAI API to generate drug properties based on user input and provides a user-friendly interface for accessing this information.
+
+### Follow-Up Prompts
+ChemoAI now includes a new feature of follow-up prompts, which provides users with additional information and options based on their input. For example, if a user searches for a particular drug, the app may suggest follow-up prompts related to managing common side effects, learning about clinical trials, or exploring alternative treatments.
 
 ## Installation
 
@@ -32,6 +35,8 @@ To use ChemoAI, run the app.py script from the command line.
 This will start the app and open a web interface that allows users to input a molecule name or SMILES format and retrieve drug properties. The app will call the OpenAI API to generate additional drug-related information based on user input and display this information on the web page.
 ![index](https://user-images.githubusercontent.com/91246296/227491711-c799be3f-94c8-419a-bff6-eed53fd041f0.JPG)
 
+## Setting Up ChemoAI
+ChemoAI is currently under development and is not yet ready for deployment. However, you can clone the repository to your local machine and explore the codebase to learn more about the app's functionality and architecture.
 
 ## Examples
 Valid molecule names or SMILES strings that can be input into the app include:
