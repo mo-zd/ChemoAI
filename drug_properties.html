@@ -42,6 +42,12 @@
                 <li><strong>Side effects:</strong> {{ drug_properties.side_effects }}</li>
                 <li><strong>Potential drug interactions:</strong> {{ drug_properties.potential_drug_interactions }}</li>
             </ul>
+            <h2>Follow-up Prompts</h2>
+            <ul>
+                {% for prompt in follow_up_prompts %}
+                    <li>{{ prompt }}</li>
+                {% endfor %}
+            </ul>
         {% else %}
             <h1>Error</h1>
             <p>{{ error_message }}</p>
